@@ -163,7 +163,7 @@ createDiagrams() {
 
         { # grouping echoes and sending their output to ${mdFile}
           echo -e "\n\n## ${namespace}"
-          echo -e "\n- generated at **$(date --iso-8601=minutes --utc)**"
+          echo -e "\n- generated at **$(date -Iminutes --utc)**"
           echo -e "\n![${namespace}](/${outputFile})"
         } >> "${mdFile}"
       done
