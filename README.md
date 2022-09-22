@@ -9,6 +9,7 @@ A script that iterates through GCP projects/clusters/namespaces and create markd
 - [docker](https://docs.docker.com/engine/install/) - the k8sviz.sh script calls a container to run the application to generate the images.
 - [gcloud](https://cloud.google.com/sdk/docs/install) - to get the list of clusters
 - [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/) - to get the list of namespaces
+- [jq](https://stedolan.github.io/jq/download/) - to parse JSON output from kubectl
 
 
 ## Installation
@@ -42,5 +43,4 @@ k8s-mapper.sh my-project1 my-other-project2
 The markdown file(s) will be created in a directory named `k8s-maps`.
 
 The images are going to be stored in subdirectories named like `${gcpProject}/${clusterName}/`.
-
 

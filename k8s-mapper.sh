@@ -11,6 +11,7 @@
 # - docker  - the k8sviz.sh script calls a container (check k8sviz's README)
 # - gcloud  - to get the list of clusters
 # - kubectl - to get the list of namespaces
+# - jq      - to parse JSON output from kubectl
 #
 ###########################################################################
 # shellcheck disable=2155
@@ -52,6 +53,7 @@ checkDependencies() {
     ['docker']='https://docs.docker.com/engine/install/'
     ['gcloud']='https://cloud.google.com/sdk/docs/install'
     ['kubectl']='https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/'
+    ['jq']='https://stedolan.github.io/jq/download/'
   )
 
   for cmd in "${!dependenciesDocs[@]}"; do
